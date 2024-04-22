@@ -1,7 +1,7 @@
 .contact_form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
     margin-bottom: 40px;
 }
@@ -12,7 +12,17 @@
     width: 100%
 }
 
-.contact_form label input {
+.submit {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.element_contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     border-radius: 5px;
     height: 30px;
     padding: 0 10px;
@@ -21,4 +31,14 @@
 .contact_form button {
     padding: 10px 20px;
     border-radius: 5px;
+}
+
+.contact_form button:hover {
+    background-color: #6e8ad6;
+}
+
+.error {
+    color: #f44336;
+    font-size: 14px;
+    margin-top: 5px;
 }
